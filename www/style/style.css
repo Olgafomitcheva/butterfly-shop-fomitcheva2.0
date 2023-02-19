@@ -1,2 +1,56 @@
 
 /*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6W119 */
+@font-face {
+    font-family: Opensans;
+    src: url(../fonts/OpenSans-SemiBold.ttf
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Opensans;
+    src: url(../fonts/OpenSans-);
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+}
+.header {
+    width: 100wv;
+    background-color: #403232;
+    margin: 0 auto;
+}
+.header-inner {
+    border: 1px solid red;
+}
+.header-wrap {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    margin-right: auto;
+    font-family: Opensans;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 42px;
+    color: #FFFF;
+    /* font-weight: 300; */
+    /* font-size: 42px; */
+    /* line-height: 49px; */
+    text-decoration: none;
+  }
+  .main-menu ul {
+    display: flex;
+    list-style: none;
+  }
+  .main-menu li {
+    margin-left: 30px;
+  }
+  .main-menu a {
+    color: #FBF2DA;
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration: none;
+  }
