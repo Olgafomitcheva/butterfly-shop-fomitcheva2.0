@@ -1,8 +1,29 @@
-// .promo {
-//   padding: 50px 0;
-//   background-color: lightsteelblue;
-//   border-radius: 10px;
-// }
+.promo {
+  display: flex;
+  margin: auto;
+
+ 
+}
+.promo-visual {
+    background-image: url(../images/promo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+   
+  
+}
+  h1 {
+    text-align: center;
+    width: 1276px;
+    font-family: $font-tittle;
+    font-size: 72px;
+    line-height: 98px;
+    margin-top: 200px;
+    color: $color-light;
+}
 
 // .promo-inner {
 //   margin: 0 auto;
@@ -14,10 +35,14 @@
 //   }
 // }
 
-// .promo-ttl {
+.promo-ttl {
 //   font-size: $h1-fz-desktop;
 //   font-weight: $h1-fw;
-
+//    font-weight: 600;
+//    font-size: 72px;
+//    line-height: 98px;
+//    color: $color-light;
+}
 //   @media (max-width: 1279px) {
 //     font-size: $h1-fz-tablet;
 //   }
