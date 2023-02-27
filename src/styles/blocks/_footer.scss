@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 119px;
+    background-color: $color-dark;
+    color: $color-light;
+    align-items: center;
+    padding-left: 82px;
+    padding-right: 82px;
+}
+
+.footer .phone {
+    display: block;
+    width: 225px;
+    font-family: $font;
+    font-size: 28px;
+    color: $color-light;
+  
+}
+
+

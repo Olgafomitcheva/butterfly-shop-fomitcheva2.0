@@ -2,6 +2,7 @@
 @import "common/_variables";
 @import "common/_fonts";
 @import "common/_common";
+@import "common/_mixins";
 
 // // blocks
 @import "blocks/_promo";
@@ -9,3 +10,6 @@
 @import"blocks/_main-menu";
 @import"blocks/_btn";
 @import"blocks/_services";
+@import"blocks/_order";
+@import"blocks/_footer";
+@import"blocks/_form";

@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Butterfly shop</title>
+    <script src="https://use.fontawesome.com/d8fac51162.js"></script>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header class="header">
-        <div    class="header-inner">
-            <div class="header-wrap">
-                <a href="index.html" class="header-logo">Butterfly</a>
-                <nav class="main-menu">
-                    <ul>
-                        <li><a href="#" class="btn">Каталог</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <header  class="header">                            <div class="header-wrap">
+            <a href="index.html" class="header-logo">Butterfly</a>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#" class="btn">Каталог</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -33,23 +31,75 @@
                     Заказать бабочку
                 </div>
             </div>
-            <!-- <p class="promo-slogan">Описание сайта, типа тут все самое офиггенное и опупенное!</p> -->
-            <!-- </div> -->
         </div>
         <section class="services"> 
-            <div class="services-inner">
                <h2>Наши работы</h2>
-                <div class="image">
-                <img class="img" src="images/серая бабочка в коробочке.png" alt="Серая бабочка в коробочке">
-                <img class="img" src="images/бабочки в упаковке.png" alt="Бабочки в упаковке">
-                <img class="img" src="images/мужик в бабочке.png" alt="Мужик в бабочке">
-                <img class="imag"  src="images/котик в бабочке.png" alt="Котик в розовой бабочке">
+            <div class="image">
+                <figure class="services-figure">
+                    <div class="figure-img">
+                        <img src="images/серая бабочка в коробочке.png" alt="Серая бабочка в коробочке">
+                        <figurecaption  class="caption">Бабочка такая</figurecaption>
+                        </div>
+                    </figure>
+                    <figure class="services-figure">
+                        <div class="figure-img">
+                            <img src="images/бабочки в упаковке.png" alt="Бабочки в упаковке">
+                            <figurecaption  class="caption">Бабочка растакая</figurecaption>
+                        </div>
+                    </figure>
+                    <figure     class="services-figure">
+                        <div class="figure-img">
+                            <img src="images/мужик в бабочке.png" alt="Мужик в бабочке">
+                            <figurecaption  class="caption">Бабочка сякая
+                            </figurecaption>
+                        </div>
+                    </figure>
+                    <figure class="services-figure">
+                        <div class="figure-img">
+                            <img src="images/котик в бабочке.png" alt="Котик в розовой бабочке">
+                            <figurecaption  class="caption">Кривая
+                            </figurecaption>
+                        </div>
+                    </figure> 
                 </div>
-            </div>
-            <div class="btn">Все бабочки
+                <div class="btn">Все бабочки
             </div>
         </section>
+        <section class="order">
+            <h2>Закажи пошив</h2>
+            <p>Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На встрече он снимет мерки и поможет определиться с тканью.</p>               
+            <form action="#" class="form">
+                <div class="form-field">
+                    <label for="name" class="form-label">Ваше имя</label>
+                    <input name="name" id="name" type="text" placeholder="Иван Иванов"
+                     class="form-input">
+                </div>
+                <div class="form-field">
+                    <label for="phone" class="form-label">Телефон</label>
+                    <input name="phone" id="phone" type="text" placeholder="+78128008080" class="form-input">
+                </div>
+                <div class="form-field">
+                    <button type="submit" class="btn">Заказать</button>
+                </div>
+            </form>
+        </section>
     </main>
+        <footer class="footer">
+       
+            <a href="index.html" class="header-logo">Butterfly</a>
+            <div class="phone">+78008888888</div>
+            <ul class="social">
+                <li class="social-item"><a href="#"><img src="images/uil_instagram-alt.png" alt="Инста"></a>
+                    
+                </li>
+                <li class="social-item">
+                    <a href="#"><img src="images/Vector.png" alt="Фэйсбук"></a>
+                </li>
+                <li class="social-item">
+                    <a href="#" ><img src="images/telegr.png" alt="Телеграмм"></a>
+                </li>
+            </ul>
+        </footer>
     <script src="scripts/script.js"></script>
 </body>
 </html>
