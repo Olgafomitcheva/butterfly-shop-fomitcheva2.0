@@ -1,7 +1,13 @@
+@mixin inner {
+    max-width: 1278px + $gap;
+    padding: 0 $gap-half;
+    margin: 0 auto;
+}
+
 @mixin section-caption {
     position: absolute;
     left: 0;
-    bottom: 4px;
+    bottom: 0;
     width: 100%;
     height: 63px;
     font-family: $font;
@@ -10,5 +16,10 @@
     text-align: center;
     background-color: rgba($color-basedark, .6);
     color: $color-light;
-
+}
+@mixin section-h2 {
+    font-family: $font;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 130px;
 }

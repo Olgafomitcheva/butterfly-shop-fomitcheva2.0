@@ -3,27 +3,41 @@
     flex-direction: column;
     align-items: center;
 }
-h2 {
-    font-family: $font;
-    font-size: 60px;
-    text-align: center;
-    padding-top: 130px;
-    // @include section-h2;   
+.services-inner {
+    @include inner;
 }
+h2 {
+    @include section-h2;   
+}
+.services-works {
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    margin:  80px 0 40px;
+}
+.services-works p {
+    display: block;
+    font-family: $font;
+    font-size: 24px;
+    padding: 0 25px;
+       
+}
+.services-works p:nth-child(1) {
+    color: $color-accent;
+}
+
 .image {
-    margin-top: 100px;
+    // margin-top: 100px;
     margin-bottom: 120px;
     display: flex;
+    flex-wrap: wrap;
 }
-// .services {
-//     margin-left: 82px;
-//     margin-right: 82px;
-// }
-
 .services-figure {
+    display: flex;
+    flex-basis: 25%;
     flex-shrink: 0;
-    padding: 0 $gap-half;
-   
+    padding: $gap-half;
+  
 }
 .figure-img {
     position: relative;
@@ -34,4 +48,6 @@ h2 {
 .services .btn {
     margin-bottom: 130px;
     padding-top: 30px;
+   
+
 }
