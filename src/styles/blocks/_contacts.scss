@@ -1,0 +1,45 @@
+.contacts-inner {
+    @include inner;
+}
+h2 {
+    @include section-h2;
+}
+.contacts-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 40px;
+   
+}
+.cities {
+    display: flex;
+    justify-content: center;
+    font-family: $font;
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0 303px;
+    
+}
+.cities p {
+    display: inline-block;
+    padding-left: 50px;
+   
+}
+.cities :first-child {
+    padding-left: 0;
+    color: $color-accent;
+}
+.contacts-wrap ul {
+    flex-direction: column;
+    font-family: $font;
+    font-size: 24px;
+    line-height: 33px;
+    padding-top: 40px;
+   
+         
+}
+.contacts-wrap li {
+    display: block;
+    margin-right: auto;
+    
+}

@@ -9,6 +9,7 @@
 h2 {
     @include section-h2;   
 }
+
 .services-works {
     display: flex;
     justify-content:  center;
@@ -27,7 +28,7 @@ h2 {
 }
 
 .image {
-    // margin-top: 100px;
+    margin-top: 100px;
     margin-bottom: 120px;
     display: flex;
     flex-wrap: wrap;

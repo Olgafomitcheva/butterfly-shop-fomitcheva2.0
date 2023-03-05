@@ -3,6 +3,9 @@
     background-color: #c4c4c4;
 }
 .order-inner {
+    @include inner;
+}
+.order-wrap {
     display: flex;
     flex-direction: column;
     margin: 0 72px;
