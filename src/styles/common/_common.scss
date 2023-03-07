@@ -6,6 +6,10 @@
 
 body {
     padding-top: 88px;
+
+    @media (max-width: $mobile-max) {
+        padding-top: 68px; 
+    }
     
 }
 

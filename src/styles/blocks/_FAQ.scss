@@ -1,0 +1,44 @@
+.information-inner {
+    @include inner;
+}
+.information-inner h2 {
+    @include section-h2;
+}
+.information-wrap {
+    margin: 80px 0 130px;
+}
+.information-wrap .itm1, .itm2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+    align-items: center;
+}
+.information-wrap .itm1 {
+    margin-bottom: 40px;
+  
+}
+.itm1 p, .itm2 p {
+    font-family: $font;
+    font-size: 36px;
+    line-height: 49px;
+}
+.itm1 .plus {
+    width: 40px;
+    height: 40px;
+
+}
+.itm2 .minus {
+    width: 40px;
+    height: 2px;
+}
+.text p {
+    display: block;
+    max-width: 1192px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-family: $font;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+}
+

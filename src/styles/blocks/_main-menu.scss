@@ -1,20 +1,41 @@
- ul {
+.main-menu {
+  @media (max-width: $mobile-max) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: $color-dark;
+    border-top: 1px solid $color-light;
+  }
+  ul {
     display: flex;
     align-items: center;
     list-style: none;
-     li {
-        margin-left: 30px;
-        
+
+    @media (max-width: $mobile-max) {
+        display: block;
     }
-    
-      a {
-        color: $color-light;
-        font-size: 14px;
-        font-weight: 700;
-        text-decoration: none;
-    
-        &:hover {
-          color: $color-accent;
+    li {
+      margin-left: 30px;
+
+      @media (max-width: $mobile-max) {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }    
+    a {
+      color: $color-light;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 700;
+      text-decoration: none;
+      &:hover {
+        color: $color-accent;
+      }
     }
   }
 }
@@ -25,5 +46,6 @@
   font-size: 14px;
   padding-top: 30px;
   line-height: 24px;
+ 
 } 
 
