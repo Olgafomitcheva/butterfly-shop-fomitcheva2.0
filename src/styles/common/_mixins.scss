@@ -12,15 +12,26 @@
     height: 63px;
     font-family: $font;
     font-size: 24px;
+    line-height: 33px;
     padding-top: 19px;
     text-align: center;
     background-color: rgba($color-basedark, .6);
     color: $color-light;
 }
+
 @mixin section-h2 {
     font-family: $font;
-    font-size: 60px;
+    font-size: 64px;
+    line-height: 87px;
     text-align: center;
-    padding-top: 130px;
     filter: drop-shadow(0 0  4px rgba(0, 0, 0, 0.25));
+
+    @media (max-width: $tablet-max) {
+        font-size: 60px;
+        line-height: 82px;   
+    }
+    @media (max-width: $mobile-max) {
+        font-size: 36px;
+        line-height: 49px; 
+    }
 }

@@ -1,5 +1,5 @@
 .order {
-   
+    padding: 130px 0;
     background-color: #c4c4c4;
 }
 .order-inner {
@@ -10,13 +10,25 @@
     flex-direction: column;
     margin: 0 72px;
     font-family: $font;
+   
+    @media (max-width: $tablet-max) {
+        margin: 0 10px;
+    }
 }
 p {
     font-family: $font;
     font-size: 28px;
-    margin-top: 40px;
+    line-height: 38px;
+    margin: 40px 0 90px;
     text-align: center;
+
+    @media (max-width: $mobile-max) {
+        font-size: 18px;
+        line-height: 25px; 
+    }
+
 }
+
 
 
 
