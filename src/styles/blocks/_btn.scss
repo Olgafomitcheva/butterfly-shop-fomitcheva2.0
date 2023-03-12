@@ -19,15 +19,3 @@
   }
  
 }
-.btn-form {
-    display: flex;
-    margin-top: 40px;
-    width: 106%;
-    align-items: center;
-    justify-content: center;
-    
-    @media (max-width: $tablet-max) {
-       width: 100%;
-       margin-top: 40px;
-    }
-}

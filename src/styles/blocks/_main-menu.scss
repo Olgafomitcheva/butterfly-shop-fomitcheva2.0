@@ -11,15 +11,16 @@
   }
   ul {
     display: flex;
-    align-items: center;
+    height: 90px;
     list-style: none;
-
+   
     @media (max-width: $mobile-max) {
         display: block;
     }
     li {
-      margin-left: 30px;
-
+      margin: 0;
+      padding: 30px;
+     
       @media (max-width: $mobile-max) {
         margin-left: 0;
         margin-top: 20px;
@@ -32,20 +33,14 @@
       font-size: 14px;
       line-height: 24px;
       font-weight: 700;
+      padding: 30px;
       text-decoration: none;
       &:hover {
-        color: $color-accent;
+        background-color: $color-accent;
       }
     }
   }
 }
 
-.main-menu .btn {
-  width: 117px;
-  height: 90px;
-  font-size: 14px;
-  padding-top: 30px;
-  line-height: 24px;
- 
-} 
+
 

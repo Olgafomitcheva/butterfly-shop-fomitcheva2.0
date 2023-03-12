@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding:  130px 0;
-
+   
     @media (max-width: $tablet-max) {
         padding:  120px 0;
     }
@@ -11,35 +11,65 @@
         padding:  90px 0;
     }
 }
+.services-inner {
+    @include inner;
+}
 
 h2 {
-    @include section-h2;   
+    @include section-h2; 
+    margin-bottom: 80px; 
+       
+    @media (max-width: $tablet-max) {
+        margin-bottom: 70px; 
+    }
+    @media (max-width: $mobile-max) {
+        margin-bottom: 50px; 
+    }
+    
 }
 
 .services-works {
     display: flex;
+    padding-bottom: 30px;
     justify-content:  center;
-    align-items: center;
-    margin:  80px 0 40px;
-
    
+    @media (max-width: $mobile-max) {
+        flex-wrap: wrap;
+        padding-bottom: 20px; 
+    }
+  
 }
-.services-works p {
+.services-works a {
     display: block;
     font-family: $font;
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 24px;
     padding: 0 25px;
+    text-decoration: none;
+    color: $color-dark;
+    &:hover {
+        color: $color-accent;
+      }
+   
+      @media (max-width: $mobile-max) {
+        padding-top: $gap-half;
+      }
        
 }
-.services-works p:nth-child(1) {
-    color: $color-accent;
-}
-
 .image {
-    margin-top: 100px;
     margin-bottom: 120px;
+    margin-right: -20px;
+    margin-left: -20px;
     display: flex;
     flex-wrap: wrap;
+    background-color: blueviolet;
+
+    @media (max-width: $tablet-max) {
+    margin-bottom: 80px;
+    }
+    @media (max-width: $mobile-max) {
+    margin-bottom: 60px;
+    }
 }
 .services-figure {
     display: flex;
@@ -66,7 +96,6 @@ h2 {
     @include section-caption;
 }
 .services .btn {
-    // margin-bottom: 130px;
     padding-top: 30px;
    
     @media (max-width: $mobile-max) {

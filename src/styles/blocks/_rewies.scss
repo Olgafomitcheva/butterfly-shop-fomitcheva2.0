@@ -1,11 +1,19 @@
+.rewies {
+    padding: 130px 0;
+
+    @media (max-width: $tablet-max) {
+        padding: 120px 0;
+    }
+    @media (max-width: $mobile-max) {
+    padding: 90px 0;
+    }
+   
+}
 .rewies-inner {
     @include inner;
+   
 }
 h2 {
-    // font-family: $font;
-    // font-size: 87px;
-    // filter: drop-shadow(0 0  4px rgba(0, 0, 0, 0.25));
-    // text-align: center;
     @include section-h2;
 }
 
@@ -13,18 +21,27 @@ h2 {
     display: flex;
     align-items: center;
     margin: 0 auto;
+   
 }
 
 .rewies-item {
     display: flex;
     width: 77%;
-    margin: 77px 128px 130px;
+    margin: 0 auto;
 
+    @media (max-width: $mobile-max) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 .rewies-item-vision {
     flex-basis: 40%;
     flex-shrink: 0;
-    padding-right: $gap 0;
+    padding: $gap;
+
+    @media (max-width: $mobile-max) {
+        flex-basis: 100%;
+    }
    
 }
 .rewies-item-text {
@@ -33,6 +50,17 @@ h2 {
     font-family: $font;
     font-size: 24px;
     line-height: 33px;
+    background-color: aqua;
+
+    @media (max-width: $tablet-max) {
+        line-height: 18px;
+        padding-top: 25px;
+    }
+    @media (max-width: $mobile-max) {
+        line-height: 16px;
+        padding-top: 22px;
+        
+    }
     
 }
 .rewies-item-text-ttl {
@@ -41,12 +69,32 @@ h2 {
     line-height: 62px;
     padding-top: 40px;
     text-align: left;
-    
+
+    @media (max-width: $tablet-max) {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    @media (max-width: $mobile-max) {
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+   }
 }
+    
 .rewies-item-text p {
     text-align: left;
+
+    @media (max-width: $mobile-max) {
+        text-align: center;
+    }
 }
  .rewies-wrap .arrow {
-    max-width: 60px;
-    max-height: 60px;
+    width: 60px;
+    height: 60px;
+
+    @media (max-width: $tablet-max) {
+        width: 44px;
+        height: 44px;
+    }
+  
  }

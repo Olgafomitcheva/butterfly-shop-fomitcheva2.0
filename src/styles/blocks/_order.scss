@@ -8,12 +8,7 @@
 .order-wrap {
     display: flex;
     flex-direction: column;
-    margin: 0 72px;
     font-family: $font;
-   
-    @media (max-width: $tablet-max) {
-        margin: 0 10px;
-    }
 }
 p {
     font-family: $font;
