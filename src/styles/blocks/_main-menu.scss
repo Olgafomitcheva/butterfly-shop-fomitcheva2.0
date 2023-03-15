@@ -5,26 +5,27 @@
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: $color-dark;
     border-top: 1px solid $color-light;
   }
+  &.is-open {
+    @media (max-width: $mobile-max) {
+      display: block;
+    }
+  }
   ul {
     display: flex;
-    height: 90px;
     list-style: none;
-   
+       
     @media (max-width: $mobile-max) {
         display: block;
     }
     li {
-      margin: 0;
       padding: 30px;
      
       @media (max-width: $mobile-max) {
-        margin-left: 0;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        padding: 10px;
         text-align: center;
       }
     }    

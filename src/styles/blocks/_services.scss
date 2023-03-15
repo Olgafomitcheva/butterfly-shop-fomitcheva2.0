@@ -3,13 +3,17 @@
     flex-direction: column;
     align-items: center;
     padding:  130px 0;
-   
+  
     @media (max-width: $tablet-max) {
         padding:  120px 0;
     }
     @media (max-width: $mobile-max) {
         padding:  90px 0;
     }
+}
+.services-main {
+    background-color: #c4c4c4;
+    margin-bottom: 31px;
 }
 .services-inner {
     @include inner;
@@ -58,17 +62,14 @@ h2 {
 }
 .image {
     margin-bottom: 120px;
-    margin-right: -20px;
-    margin-left: -20px;
     display: flex;
     flex-wrap: wrap;
-    background-color: blueviolet;
-
+    
     @media (max-width: $tablet-max) {
-    margin-bottom: 80px;
+        margin-bottom: 80px;
     }
     @media (max-width: $mobile-max) {
-    margin-bottom: 60px;
+        margin-bottom: 60px;
     }
 }
 .services-figure {
@@ -78,7 +79,6 @@ h2 {
     padding: $gap-half;
 
     @media (max-width: $tablet-max) {
-        flex-wrap: wrap; 
         flex-basis: 50%;
         justify-content: center;       
     }

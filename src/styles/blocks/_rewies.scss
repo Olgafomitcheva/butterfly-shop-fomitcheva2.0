@@ -28,6 +28,7 @@ h2 {
     display: flex;
     width: 77%;
     margin: 0 auto;
+   
 
     @media (max-width: $mobile-max) {
         flex-wrap: wrap;
@@ -38,6 +39,7 @@ h2 {
     flex-basis: 40%;
     flex-shrink: 0;
     padding: $gap;
+   
 
     @media (max-width: $mobile-max) {
         flex-basis: 100%;
@@ -50,8 +52,7 @@ h2 {
     font-family: $font;
     font-size: 24px;
     line-height: 33px;
-    background-color: aqua;
-
+   
     @media (max-width: $tablet-max) {
         line-height: 18px;
         padding-top: 25px;
@@ -59,9 +60,7 @@ h2 {
     @media (max-width: $mobile-max) {
         line-height: 16px;
         padding-top: 22px;
-        
     }
-    
 }
 .rewies-item-text-ttl {
     font-family: $font;
