@@ -65,6 +65,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     
+    
     @media (max-width: $tablet-max) {
         margin-bottom: 80px;
     }
@@ -77,6 +78,7 @@ h2 {
     flex-basis: 25%;
     flex-shrink: 0;
     padding: $gap-half;
+       
 
     @media (max-width: $tablet-max) {
         flex-basis: 50%;
@@ -91,6 +93,8 @@ h2 {
 
 .figure-img {
     position: relative;
+    width: 100%;
+    
 }
 .caption {
     @include section-caption;
