@@ -1,3 +1,4 @@
+
 .information-inner {
     @include inner;
     padding: 130px 0;
@@ -12,34 +13,40 @@
 .information-inner h2 {
     @include section-h2;
 }
-.information-wrap {
-    margin-top: 80px;
+
+.accordion {
+    margin-top: 40px;
+    box-shadow: 0 0 4px rgba(255, 45, 45, 0.2);
+     
+    &:first-of-type {
+      margin-top: 80px;
    
-    @media (max-width: $tablet-max) {
+     
+
+      @media (max-width: $tablet-max) {
         margin-top: 70px;
     }
     @media (max-width: $mobile-max) {
         margin-top: 50px;
     }
+    }
 }
-.information-wrap .itm1, .itm2 {
-    display: flex;
-    justify-content: space-between;
+
+.accordion-btn {
+    display: block;
+    width: 100%;
     padding: 0 30px;
-    align-items: center;
-}
-// .information-wrap .itm1 {
-//     // margin-bottom: 40px;
-   
-// }
-.itm1 p, .itm2 p {
+    text-align: left;
     font-family: $font;
     font-size: 36px;
     line-height: 49px;
+    border: 1px rgba(255, 45, 45, 0.2);
+    cursor: pointer;
    
     @media (max-width: $tablet-max) {
         font-size: 32px;
         line-height: 44px;
+                   
     }
     @media (max-width: $mobile-max) {
         font-size: 20px;
@@ -47,25 +54,14 @@
     }
 }
 
-.itm1 .plus, .itm2 .minus {
-    width: 40px;
-    height: 40px;
-
-    @media (max-width: $mobile-max) {
-    width: 30px;
-}
-}
-.itm2 .minus {
-    height: 2px;
-}
-.text p {
-    display: block;
-    max-width: 1192px;
-    margin: 25px 30px;
+.accordion-answear {
+    display: none;
     font-family: $font;
     font-size: 18px;
     line-height: 25px;
-    text-align: left;
+    padding: 0 30px 30px;
+  
+   
    
     @media (max-width: $tablet-max) {
         font-size: 16px;
