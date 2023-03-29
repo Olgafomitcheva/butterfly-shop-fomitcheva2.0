@@ -15,7 +15,7 @@
                 <a href="index.html" class="header-logo">Butterfly</a>
                 <nav class="main-menu j-main-menu">
                     <ul>
-                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="catalog.html" class="active">Каталог</a></li>
                         <li><a href="rewies.html">Отзывы</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                         <li><a href="FAQ.html">FAQ</a></li>
@@ -29,107 +29,121 @@
     </header>
  
     <main>
-        <section class="services">
-            <div class="services-inner">
+        <section class="catalog">
+            <div class="catalog-inner">
                 <h2>Наши работы</h2>
-                <div class="services-works">
-                    <a href="#">все</a>
-                    <a href="#"> строгие</a>
-                    <a href="#">веселые</a>
-                    <a href="#">для животных</a>
-                    <a href="#"> детские</a>
-                    <a href="#">для взрослых</a>
+                <div class="catalog-works">
+                    <ul class="filter">
+                        <li class="filter-item">
+                            <a href="#" class="filter-link j-works-link active" data-filter="all">все</a>
+                        </li>
+                        <li class="filter-item">
+                            <a href="#" class="filter-link j-works-link" data-filter="strong">строгие</a>
+                        </li>
+                        <li class="filter-item">
+                            <a href="#" class="filter-link j-works-link" data-filter="funny">веселые</a>
+                        </li>
+                        <li class="filter-item">
+                            <a href="#" class="filter-link j-works-link" data-filter="for animals">для животных</a>
+                        </li>
+                        <li class="filter-item">
+                            <a href="#" class="filter-link j-works-link" data-filter="for children"> детские</a>
+                        </li>
+                        <li class="filter-item">
+                            <a href="#" class="filter-link j-works-link" data-filter="for adults">для взрослых</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="image">
-                    <figure class="services-figure">
-                        <a href="#"></a> <div class="figure-img">
-                            <a href="#"><img src="images/серая бабочка в коробочке.png" alt="Серая бабочка в коробочке">
-                            <figurecaption  class="caption">Бабочка такая</figurecaption></a>
-                        </div>
-                    </figure>
-                    <figure class="services-figure">
+                <ul class="image">
+                    <li class="works-item j-works-item" data-type="strong">
                         <div class="figure-img">
-                            <a href="#"><img src="images/бабочки в упаковке.png" alt="Бабочки в упаковке">
-                            <figurecaption  class="caption">Бабочка растакая</figurecaption></a>
+                           <img src="images/серая бабочка в коробочке.png" alt="Серая бабочка в коробочке">
+                            <figurecaption  class="caption">Бабочка такая</figurecaption>
                         </div>
-                    </figure>
-                    <figure class="services-figure">
+                    </li>
+                    <li class="works-item j-works-item" data-type="strong">
                         <div class="figure-img">
-                            <a href="#"><img src="images/мужик в бабочке.png" alt="Мужик в бабочке">
+                            <img src="images/бабочки в упаковке.png" alt="Бабочки в упаковке">
+                            <figurecaption  class="caption">Бабочка растакая</figurecaption>
+                        </div>
+                    </li>
+                    <li class="works-item j-works-item" data-type="for adults">
+                        <div class="figure-img">
+                            <img src="images/мужик в бабочке.png" alt="Мужик в бабочке">
                             <figurecaption  class="caption">Бабочка сякая
-                            </figurecaption></a>
+                            </figurecaption>
                         </div>
-                    </figure>
-                    <figure class="services-figure">
+                    </li>
+                    <li class="works-item j-works-item" data-type="for animals">
                         <div class="figure-img">
-                            <a href="#"><img src="images/котик в бабочке.png" alt="Котик в розовой бабочке">
-                        <figurecaption  class="caption">Кривая
-                            </figurecaption></a>
+                            <img src="images/котик в бабочке.png" alt="Котик в розовой бабочке">
+                            <figurecaption  class="caption">Кривая
+                            </figurecaption>
                         </div>
-                    </figure> 
-                    <figure class="services-figure">
+                    </li> 
+                    <li class="works-item j-works-item" data-type="for adults">
                         <div class="figure-img">
-                            <a href="#"><img src="images/мужик в сером костюме с бабочкой.png" alt="Мужик в сером костюме с бабочкой">
+                            <img src="images/мужик в сером костюме с бабочкой.png" alt="Мужик в сером костюме с бабочкой">
                             <figurecaption  class="caption">Бабочка такая
-                            </figurecaption></a>
+                            </figurecaption>
                         </div>
-                    </figure>
-                    <figure class="services-figure">
+                    </li>
+                    <li class="works-item j-works-item" data-type="for adults">
                         <div class="figure-img">
-                            <a href="#"><img src="images/мужик с бутоньеркой и в бабочке.png" alt="Мужик с бутоньеркой и в бабочке">
+                            <img src="images/мужик с бутоньеркой и в бабочке.png" alt="Мужик с бутоньеркой и в бабочке">
                             <figurecaption  class="caption">Бабочка растакая
-                            </figurecaption></a>  
+                            </figurecaption>  
                         </div>
-                    </figure>
-                    <figure class="services-figure">
+                    </li>
+                    <li class="works-item j-works-item" data-type="for children">
                         <div class="figure-img">
-                            <a href="#"><img src="images/бабочка на голове ребенка.png" alt="Бабочка на голове ребенка">
+                           <img src="images/бабочка на голове ребенка.png" alt="Бабочка на голове ребенка">
                             <figurecaption  class="caption">
                             Бабочка сякая
-                            </figurecaption></a> 
+                            </figurecaption>
                         </div>
-                    </figure>
-                    <figure class="services-figure">
+                    </li>
+                    <li class="works-item j-works-item" data-type="for adults">
                         <div class="figure-img">
-                            <a href="#"><img src="images/мужик в белой рубашке с бабочкой.png" alt="Mужик в белой рубашке с бабочкой">
+                           <img src="images/мужик в белой рубашке с бабочкой.png" alt="Mужик в белой рубашке с бабочкой">
                             <figurecaption  class="caption">
                            Кривая 
-                            </figurecaption></a>  
+                            </figurecaption>
                         </div>
-                    </figure>
-                    <figure class="services-figure">
+                    </li>
+                    <li class="works-item j-works-item" data-type="strong">
                         <div class="figure-img">
-                            <a href="#"><img src="images/бабочки в упаковках.png" alt="Бабочки в упаковках">
+                            <img src="images/бабочки в упаковках.png" alt="Бабочки в упаковках">
                             <figurecaption  class="caption">
                             Бабочка такая 
-                            </figurecaption></a>
+                            </figurecaption>
                         </div>
-                    </figure>
-                    <figure class="services-figure">
+                    </li>
+                    <li class="works-item j-works-item" data-type="strong">
                         <div class="figure-img">
-                            <a href="#"><img src="images/серая бабочка в коробочке.png" alt="Бабочки в упаковках">
+                            <img src="images/серая бабочка в коробочке.png" alt="Бабочки в упаковках">
                             <figurecaption  class="caption">
-                           Бабочка растакая  
-                            </figurecaption></a> 
+                            Бабочка растакая  
+                            </figurecaption>
                         </div>
-                    </figure>
-                    <figure class="services-figure">
+                    </li>
+                    <li class="works-item j-works-item" data-type="for adults">
                         <div class="figure-img">
-                            <a href="#"><img src="images/мужик в черной рубашке с бабочкой.png" alt="Мужик в черной рубашке с бабочкой">
+                            <img src="images/мужик в черной рубашке с бабочкой.png" alt="Мужик в черной рубашке с бабочкой">
                             <figurecaption  class="caption">
                             Бабочка сякая
-                            </figurecaption></a> 
+                            </figurecaption>
                         </div>
-                    </figure>
-                    <figure class="services-figure">
+                    </li>
+                    <li class="works-item j-works-item" data-type="funny">
                         <div class="figure-img">
-                            <a href="#"><img src="images/клоун в цветной бабочке.png" alt="Клоун в цветной бабочке">
+                           <img src="images/клоун в цветной бабочке.png" alt="Клоун в цветной бабочке">
                             <figurecaption  class="caption">
                             Кривая
-                            </figurecaption></a>
+                            </figurecaption>
                         </div>
-                    </figure>
-                </div> 
+                    </li>
+                </ul> 
             </div>
             <div class="btn">Все бабочки
         </section>
